@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <script type="text/javascript" src="scripts/index.js" defer></script>
+    <title>Simon</title>
+</head>
+<body>
+    <div class="Header">
+        <h1>The Simon Game</h1>
+        <!-- <h2>Score: <span class="transition" id="Score">-</span></h2> -->
+        <button class="transition" id="newGame">Start a new game!</button>
+    </div>
+    <div class="Circle-outer Circle">
+        <div class="Quarter transition" id="Green"></div>
+        <div class="Quarter transition" id="Red"></div>
+        <div class="Quarter transition" id="Yellow"></div>
+        <div class="Quarter transition" id="Blue"></div>
+    </div>
+    <div class="Circle-inner Circle flex-col-center">
+        <div class="transition flex-col-center" id="Level">
+            <p>Level</p>
+            <p class="transition" id="Level-num">1</p>
+        </div>
+    </div>
+    <div class="flex-col-center">
+        <div id="gameOver">
+            <img src="static/Cross.png" />
+            <p>Game Over!</p>
+        </div>
+    </div>
+</body>
+</html>
